@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Page1Component implements OnInit {
 
+  pageNumber = 'Page 1';
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onClickButton(){
+    alert("Hello today data is: " +new Date());
+  }
 }

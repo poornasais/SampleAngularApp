@@ -1,5 +1,5 @@
-<app-header></app-header>
-<app-page1></app-page1>
-<app-page2></app-page2>
-<app-page3></app-page3>
+<app-header #headerComponent ></app-header>
+<app-page1 *ngIf= "headerComponent.pageNumber === 1"></app-page1>
+<app-page2 *ngIf = "headerComponent.pageNumber === 2"></app-page2>
+<app-page3 *ngIf = "headerComponent.pageNumber === 3"></app-page3>
 <app-footer></app-footer>
